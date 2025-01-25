@@ -39,9 +39,12 @@ batch_size = 100 # 批数量
 accuracy_cnt = 0
 
 for i in range(0, len(x), batch_size):
+    # 每次取100
     x_batch = x[i:i+batch_size]
     y_batch = predict(network, x_batch)
     p = np.argmax(y_batch, axis=1)
     accuracy_cnt += np.sum(p == t[i:i+batch_size])
 
 print("Accuracy:" + str(float(accuracy_cnt) / len(x)))
+
+# 批处理对计算机的运算大有利处，可以大幅缩短每张图像的处理时间。那么为什么批处理可以缩短处理时间呢?这是因为大多数处理 数值计算的库都进行了能够高效处理大型数组运算的最优化。并且， 在神经网络的运算中，当数据传送成为瓶颈时，批处理可以减轻数 据总线的负荷(严格地讲，相对于数据读入，可以将更多的时间用在 计算上)。也就是说，批处理一次性计算大型数组要比分开逐步计算 各个小型数组速度更快。

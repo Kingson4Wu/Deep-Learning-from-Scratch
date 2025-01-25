@@ -13,5 +13,5 @@ plt.plot(x, y2, linestyle = "--", label="cos")
 plt.xlabel("x") # x轴的标签
 plt.ylabel("y") # y轴的标签
 plt.title('sin & cos')
-plt.legend()
+plt.legend() # 增加图例标注
 plt.show()

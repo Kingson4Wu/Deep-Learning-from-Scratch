@@ -22,3 +22,6 @@ print("price:", int(price))
 print("dApple:", dapple)
 print("dApple_num:", int(dapple_num))
 print("dTax:", dtax)
+
+# 乘法层的实现
+# 购买苹果实例反向传播链式法则求导

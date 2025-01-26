@@ -32,3 +32,6 @@ print("dApple_num:", int(dapple_num))
 print("dOrange:", dorange)
 print("dOrange_num:", int(dorange_num))
 print("dTax:", dtax)
+
+# 加法层的实现
+# 计算图中层的实现(这里是加法层和乘法层)非常简单，使用这 些层可以进行复杂的导数计算

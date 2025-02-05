@@ -134,3 +134,13 @@ class DeepConvNet:
         for i, layer_idx in enumerate((0, 2, 5, 7, 10, 12, 15, 18)):
             self.layers[layer_idx].W = self.params['W' + str(i+1)]
             self.layers[layer_idx].b = self.params['b' + str(i+1)]
+
+
+# 这个网络使用 He 初始值作为权重的初始值，使用 Adam 更新权重参数。
+# 把上述内容总结起来，这个网络有如下特点。
+# • 基于3×3的小型滤波器的卷积层。 
+# • 激活函数是ReLU。
+# • 全连接层的后面使用Dropout层。 
+# • 基于Adam的最优化。
+# • 使用He初始值作为权重初始值。
+

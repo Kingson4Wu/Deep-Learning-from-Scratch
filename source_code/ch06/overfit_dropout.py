@@ -38,3 +38,6 @@ plt.ylabel("accuracy")
 plt.ylim(0, 1.0)
 plt.legend(loc='lower right')
 plt.show()
+
+# Dropout 的实验和前面的实验一样，使用 7 层网络(每层有 100 个神经元， 激活函数为 ReLU)，一个使用 Dropout，另一个不使用 Dropout
+# 通过使用 Dropout，训练数据和测试数据的识别精度的差距 变小了。并且，训练数据也没有到达 100% 的识别精度。像这样，通过使用 Dropout，即便是表现力强的网络，也可以抑制过拟合。

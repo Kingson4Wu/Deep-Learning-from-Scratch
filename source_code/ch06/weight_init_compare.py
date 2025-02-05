@@ -61,3 +61,6 @@ plt.ylabel("loss")
 plt.ylim(0, 2.5)
 plt.legend()
 plt.show()
+
+# 基于 MNIST 数据集的权重初始值的比较
+# 基于 MNIST 数据集的权重初始值的比较:横轴是学习的迭代次数(iterations)， 纵轴是损失函数的值(loss)

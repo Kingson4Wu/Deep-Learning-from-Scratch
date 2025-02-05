@@ -85,3 +85,7 @@ for i, w in enumerate(weight_scale_list):
     plt.legend(loc='lower right')
     
 plt.show()
+
+# 使用 Batch Norm 层进行实验。首先，使用 MNIST 数据集，观察使用Batch Norm层和不使用Batch Norm层时学习的过程会如何变化
+# 基于Batch Norm的效果:使用Batch Norm后，学习进行得更快了
+# 图中的实线是使用了Batch Norm时的结果，虚线是没有使用Batch Norm时 的结果:图的标题处标明了权重初始值的标准差

@@ -67,6 +67,7 @@ class Affine:
         return dx
 
 
+# Softmax-with-Loss 层有些复杂。这里只给出了最终结果， 对 Softmax-with-Loss 层的导出过程感兴趣的读者，请参照附录 A。
 class SoftmaxWithLoss:
     def __init__(self):
         self.loss = None
